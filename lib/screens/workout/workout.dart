@@ -142,6 +142,7 @@ class _WorkoutScreenState extends State<WorkoutScreen> {
                 height: 12,
               ),
               InkWell(
+                key: const Key('Add set text'),
                 onTap: () {
                   workout.execises.add(Exercise.empty());
                   setState(() {});
@@ -152,7 +153,9 @@ class _WorkoutScreenState extends State<WorkoutScreen> {
                     Text(
                       'Add set',
                     ),
-                    Icon(Icons.add),
+                    Icon(
+                      Icons.add,
+                    ),
                   ],
                 ),
               ),
